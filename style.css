@@ -1,0 +1,162 @@
+#s-m-t-tooltip {
+    padding:5px 10px;
+    margin:20px;
+    background-color:var(--Tooltips-BG);
+    border:1px solid var(--Tooltips-Border);
+    font-family:exo;
+    font-size:calc(var(--Misc-Font-Size) - 2.5px);
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+    color:var(--Tooltips-Text);
+    z-index:99;
+    max-width:40vw;
+}
+
+::selection {
+    color:var(--Text-Highlight);
+    background:var(--Text-Highlight-Background);
+}
+ 
+::-moz-selection {
+    color:var(--Text-Highlight);
+    background:var(--Text-Highlight-Background);
+}
+ 
+
+
+body {
+    font-family:exo;
+    font-size:var(--Misc-Font-Size);
+    color:var(--Misc-Text-Color);
+    line-height:var(--General-Line-Height);
+    text-align:left;
+    overflow:hidden;
+    overscroll-behavior-y:none;
+}
+
+a {
+    color:var(--Links-Color);
+}
+
+b, strong {
+    color:var(--TextBox-Bold);
+}
+
+i:not([class]), em:not([class]) {
+    color:var(--TextBox-Italic);
+}
+
+
+
+body {
+    background-image:url('https://i.ibb.co/GWL5Hz4/bsro6.png');
+    background-attachment:fixed;
+    background-repeat:repeat;
+    background-color:#000;
+}
+
+   *, body, img { cursor:url(https://secure.static.tumblr.com/vmteopo/Eggo12azo/small_white_cursor.png), auto;}
+
+:root {
+    --Page-FadeIn-Speed:0.420s;
+    
+    /*---- cont ----*/
+    --Container-Background:#000;
+    --Container-Padding:25px;
+    --Container-Width:calc(var(--Sidebar-Image-Width) + (var(--Sidebar-Image-Frame-Size) * 2) + var(--Center-Gap) + var(--Column-1-Width) + var(--Column-Spacing) + var(--Column-2-Width));
+    
+    /*---- ts ----*/
+    --Top-Title-Size:17px;
+    --Top-Title-Color:#dcdcdc;
+
+    --Tooltips-BG:#231131;
+    --Tooltips-Border:#3c3545;
+    --Tooltips-Text:#dcdcdc;
+    
+    /*---- ls ----*/
+    --Sidebar-Image-Frame-Size:8px;
+    --Sidebar-Image-Frame-Color:#606066;
+    --Sidebar-Image-Width:270px;
+    --Sidebar-Image-Background:#00060e;
+    
+    /*---- mp ----*/
+    --MusicPlayer-Padding:16px;
+    --MusicPlayer-Background:#000;
+    --MusicPlayer-Background-Transparency:30%;
+    --MusicPlayer-Buttons-Size:13px;
+    --MusicPlayer-Buttons-Color:#dcdcdc;
+    --MusicPlayer-Text-Size:12px;
+    --MusicPlayer-Text-Color:#dcdcdc;
+    
+    --Center-Gap:20px;
+    
+    /*---- columnspa ----*/
+    --Column-Spacing:18px;
+
+/*------ ts ------*/
+section[top]{
+    margin-bottom:20px;
+}
+
+[top-title]{
+    margin-left:1.5px;
+    font-family:rationale;
+    font-size:var(--Top-Title-Size);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    color:var(--Top-Title-Color);
+    line-height:var(--Top-Title-Size);
+}
+
+
+[top-links] .system-uicons {
+    stroke-width:1.2;
+}
+
+/*------ ls ------*/
+[left-sidebar]{
+    position:relative;
+    border:var(--Sidebar-Image-Frame-Size) solid var(--Sidebar-Image-Frame-Color);
+    background:var(--Sidebar-Image-Background);
+}
+
+[sidebar-image]{
+    width:var(--Sidebar-Image-Width);
+  height:auto;}
+
+[sidebar-image]{
+  filter: contrast(200%);
+
+}
+
+[music-name]{
+    margin-left:10px;
+    font-family:barlow condensed;
+    font-size:var(--MusicPlayer-Text-Size);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--MusicPlayer-Text-Color);
+    line-height:var(--MusicPlayer-Text-Size);
+}
+
+/*------ column ------*/
+column {
+    padding-top:20px;
+    height:calc(100% - 20px);
+}
+  
+.scone::-webkit-scrollbar {
+    width:var(--Scrollbar-Padding);
+    height:0px;
+    background-color:var(--TextBox-Background);
+}
+ 
+.scone::-webkit-scrollbar-thumb {
+    border:calc((var(--Scrollbar-Padding) - 1px) / 2) solid var(--TextBox-Background);
+    background-color:var(--Scrollbar-Thumb);
+}
+ 
+.scone::-webkit-scrollbar-track {
+    border:calc((var(--Scrollbar-Padding) - 1px) / 2) solid var(--TextBox-Background);
+    background-color:var(--Scrollbar-Track);
+}
